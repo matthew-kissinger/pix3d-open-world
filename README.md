@@ -1,23 +1,29 @@
-# Three.js Starter Project
+# Pix3D Starter Kit
 
-A simple starter project using:
-- Vite
-- TypeScript
-- Three.js
+A clean 2.5D browser game engine sandbox with Three.js, designed for AI-assisted game development.
 
-## Features
-- Basic 3D scene setup
-- Orbit controls for camera interaction
-- Lighting and materials
-- Responsive design
+## Quick Start
 
-## Getting Started
-```
+```bash
 npm install
 npm run dev
 ```
 
-## Controls
-- Left-click and drag: Rotate the camera
-- Scroll wheel: Zoom in/out
-- Right-click and drag: Pan the camera 
+## Documentation
+
+See [STARTER_KIT_README.md](STARTER_KIT_README.md) for detailed documentation on:
+- Adding assets with AI assistance
+- System architecture
+- Example prompts
+- Performance optimization
+
+## Features
+
+- Chunked terrain with LOD
+- Efficient billboard sprite system
+- Water rendering with animations
+- Player controller with collision
+- Ready for enemies, NPCs, and foliage
+- Optimized for thousands of sprites
+
+This is a starter kit - add your own assets and let AI help you build your game!

@@ -22,26 +22,18 @@ export class AssetLoader implements GameSystem {
   }
 
   private async discoverAssets(): Promise<void> {
-    // Known assets in the project root
+    // Starter kit essential assets
+    // Add your own assets to this array to make them available in the game
+    // Supported formats: .png, .jpg
+    // Categories will be automatically detected based on filename
     const knownAssets = [
-      'forestfloor.png',
-      'tree.png',
-      'tree1.png',
-      'tree2.png', 
-      'tree3.png',
-      'grass.png',
-      'mushroom.png',
-      'wheat.png',
-      'imp.png',
-      'zombie.png',
-      'goblin.png',
-      'flying_monster.png',
-      'first-person.png',
       'skybox.png',
-      'skybox2.png',
-      'skybox3.png',
-      'skybox4.png',
       'waternormals.jpg'
+      // Add your assets here:
+      // 'your-terrain-texture.png',
+      // 'your-tree.png',
+      // 'your-enemy.png',
+      // etc.
     ];
 
     for (const filename of knownAssets) {

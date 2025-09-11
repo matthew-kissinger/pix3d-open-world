@@ -89,11 +89,10 @@ export class EnemySystem implements GameSystem {
   async init(): Promise<void> {
     console.log('👹 Initializing Enemy System...');
     
-    // Create enemy billboard types
-    await this.createEnemyBillboards();
-    
-    // Spawn initial enemies
-    this.spawnInitialEnemies();
+    // Starter kit: Enemy system ready but no auto-spawning
+    // Uncomment the lines below to enable enemy spawning:
+    // await this.createEnemyBillboards();
+    // this.spawnInitialEnemies();
     
     console.log('✅ Enemy System initialized');
   }

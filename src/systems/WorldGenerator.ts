@@ -14,9 +14,9 @@ export class WorldGenerator implements GameSystem {
     terrain: Terrain,
     config: WorldConfig = {
       terrainSize: 200,
-      grassDensity: 0.25, // Even more grass
-      treeDensity: 0.05, // Much more trees for a proper forest
-      enemyCount: 10 // 5 imps + 5 attackers
+      grassDensity: 0, // Starter kit: no auto-generated foliage
+      treeDensity: 0, // Starter kit: add your own trees
+      enemyCount: 0 // Starter kit: add your own enemies
     }
   ) {
     this.billboardSystem = billboardSystem;
@@ -42,10 +42,12 @@ export class WorldGenerator implements GameSystem {
   ): void {
     console.log('Generating world...');
     
-    this.generateGrass(grassTexture);
-    this.generateTrees(treeTexture);
+    // Starter kit: Auto-generation disabled
+    // Uncomment these lines to enable automatic foliage generation:
+    // this.generateGrass(grassTexture);
+    // this.generateTrees(treeTexture);
     
-    console.log('World generation complete');
+    console.log('World generation complete - starter kit ready!');
   }
 
   private generateGrass(grassTexture: THREE.Texture): void {

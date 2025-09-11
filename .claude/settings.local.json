@@ -39,7 +39,8 @@
       "Bash(Format-Table)",
       "Bash(python:*)",
       "Bash(pip install:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
